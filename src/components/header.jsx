@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Header extends Component {
    state = {};
    render() {
       return (
          <nav className='navbar navbar-expand-md sticky-top navbar-light header'>
-            <Link className='navbar-brand' to='/'>
+            <a className='navbar-brand' href='/'>
                O M E G A
-            </Link>
+            </a>
 
             <button
                className='navbar-toggler'
@@ -25,29 +24,29 @@ class Header extends Component {
             <div className='collapse navbar-collapse' id='navbarNav'>
                <ul className='navbar-nav ml-auto '>
                   <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/'>
+                     <a className='nav-link' href='/'>
                         Home
-                     </Link>
+                     </a>
                   </li>
                   <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/watches'>
+                     <a className='nav-link' href='/watches'>
                         Watches
-                     </Link>
+                     </a>
                   </li>
                   <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/straps'>
+                     <a className='nav-link' href='/straps'>
                         Straps
-                     </Link>
+                     </a>
                   </li>
                   <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/editableproducts'>
+                     <a className='nav-link' href='/editableproducts'>
                         Editable Products
-                     </Link>
+                     </a>
                   </li>
                   <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/cart'>
+                     <a className='nav-link' href='/cart'>
                         Cart
-                     </Link>
+                     </a>
                   </li>
                </ul>
             </div>

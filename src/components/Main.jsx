@@ -3,7 +3,7 @@ import { getGames } from '../services/FakeBackend';
 import Like from './like';
 import './style.css';
 import Form from './form';
-
+import Header from './header';
 
 class Main extends Component {
    state = { Games: getGames() };
@@ -72,16 +72,12 @@ class Main extends Component {
    render() {
       return (
          <div>
-            <div className="header" style={{position: "fixed", width: '100%', padding: '10px', zIndex: 2}}>
-               O M E G A
-            </div>
+            <Header /> 
             <h1>Updated 3</h1>
             <React.Fragment>
                <Form />
             </React.Fragment>
-
             {this.renderTable()}
-
             <img src='/img/Omega2.jpg' alt='Omega' width='100%' />
             <div className='box'>
                <h1>Hi {this.yo}</h1>
