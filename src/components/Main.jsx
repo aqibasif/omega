@@ -72,6 +72,9 @@ class Main extends Component {
    render() {
       return (
          <div>
+            <div className="header" style={{position: "fixed", width: '100%', padding: '10px', zIndex: 2}}>
+               O M E G A
+            </div>
             <h1>Updated 3</h1>
             <React.Fragment>
                <Form />
