@@ -3,7 +3,6 @@ import { getGames } from '../services/FakeBackend';
 import Like from './like';
 import './style.css';
 import Form from './form';
-import Header from './header';
 
 
 class Main extends Component {
@@ -73,8 +72,7 @@ class Main extends Component {
    render() {
       return (
          <div>
-            <Header />
-            <h1>Updated*</h1>
+            <h1>Updated 3</h1>
             <React.Fragment>
                <Form />
             </React.Fragment>
