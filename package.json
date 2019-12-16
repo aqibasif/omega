@@ -9,7 +9,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.3.0",
-    "style-loader": "^1.0.1"
+    "style-loader": "^1.0.1",
+    "node": "^10.15.3"
   },
   "scripts": {
     "start": "react-scripts start",
