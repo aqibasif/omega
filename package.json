@@ -8,9 +8,9 @@
     "joi-browser": "^13.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.0",
-    "style-loader": "^1.0.1",
-    "node": "^10.15.3"
+    "style-loader": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

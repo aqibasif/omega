@@ -6,8 +6,9 @@ class Header extends Component {
    render() {
       return (
          <nav className='navbar navbar-expand-md sticky-top navbar-light header'>
-            <a className='navbar-brand' to='/'>
-               O M E G A</a>
+            <Link className='navbar-brand' to='/'>
+               O M E G A
+            </Link>
 
             <button
                className='navbar-toggler'
@@ -24,29 +25,29 @@ class Header extends Component {
             <div className='collapse navbar-collapse' id='navbarNav'>
                <ul className='navbar-nav ml-auto '>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' to='/'>
+                     <Link className='nav-link' to='/'>
                         Home
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' to='/watches'>
+                     <Link className='nav-link' to='/watches'>
                         Watches
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' to='/straps'>
+                     <Link className='nav-link' to='/straps'>
                         Straps
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' to='/editableproducts'>
+                     <Link className='nav-link' to='/editableproducts'>
                         Editable Products
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' to='/cart'>
+                     <Link className='nav-link' to='/cart'>
                         Cart
-                     </a>
+                     </Link>
                   </li>
                </ul>
             </div>
