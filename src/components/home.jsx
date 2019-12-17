@@ -6,6 +6,7 @@ class Home extends Component {
         return ( 
             <div className='back'>
                 <img src="/img/omega11.2.jpg" alt="OMEGA" width="100%"/>
+
             </div>
          );
     }
