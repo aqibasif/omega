@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
    state = {};
    render() {
       return (
          <nav className='navbar navbar-expand-md sticky-top navbar-light header'>
-            <a className='navbar-brand' href='/'>
-               O M E G A
-            </a>
+            <Link className='navbar-brand' to='/'>
+               <img src='/img/logo4.png' alt='Logo' width="100px"/>
+            </Link>
 
             <button
                className='navbar-toggler'
@@ -24,29 +25,29 @@ class Header extends Component {
             <div className='collapse navbar-collapse' id='navbarNav'>
                <ul className='navbar-nav ml-auto '>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' href='/'>
+                     <Link className='nav-link' to='/'>
                         Home
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' href='/watches'>
+                     <Link className='nav-link' to='/watches'>
                         Watches
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' href='/straps'>
+                     <Link className='nav-link' to='/straps'>
                         Straps
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' href='/editableproducts'>
+                     <Link className='nav-link' to='/editableproducts'>
                         Editable Products
-                     </a>
+                     </Link>
                   </li>
                   <li className='nav-item mr-4'>
-                     <a className='nav-link' href='/cart'>
+                     <Link className='nav-link' to='/cart'>
                         Cart
-                     </a>
+                     </Link>
                   </li>
                </ul>
             </div>

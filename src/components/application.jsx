@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './header';
-import Hero from './hero';
+import Home from './home';
+import './style.css';
 
 class Application extends Component {
    state = {};
    render() {
       return (
-         <div className='back'>
-            <Header />
-            <Hero/>
-            <Hero/>
-         </div>
+         <Router>
+            <div>
+               <Header />
+               <Switch>
+                  <Route exact path='/' component={Home} />
+               </Switch>
+            </div>
+         </Router>
       );
    }
 }

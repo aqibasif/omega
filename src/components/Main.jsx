@@ -74,6 +74,7 @@ class Main extends Component {
          <div>
             <Header /> 
             <h1>Updated 3</h1>
+            <div className="colory"></div>
             <React.Fragment>
                <Form />
             </React.Fragment>
