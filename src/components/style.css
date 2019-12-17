@@ -18,7 +18,7 @@ body {
 }
 
 .biglogo img {
-   opacity: 100%;
+   opacity: 0%;
    width: 30%;
    animation: moveLogo 1.4s ease-out 0.5s forwards;
 }
