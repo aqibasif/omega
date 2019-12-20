@@ -8,7 +8,12 @@ body {
    background-color: rgba(255,255,255,0.4);
 }
 
+
 .home {
+   margin-top: -72px;
+}
+
+.cart {
    margin-top: -72px;
 }
 
@@ -20,7 +25,11 @@ body {
 .biglogo img {
    opacity: 0%;
    width: 30%;
-   animation: moveLogo 1.4s ease-out 0.5s forwards;
+   -webkit-animation: moveLogo 1.4s ease-out 0.5s forwards; /* Safari & Chrome */
+   -moz-animation: moveLogo 1.4s ease-out 0.5s forwards; /* Firefox */
+   -ms-animation: moveLogo 1.4s ease-out 0.5s forwards; /* Internet Explorer */
+   -o-animation: moveLogo 1.4s ease-out 0.5s forwards; /* Opera */
+   animation: moveLogo 1.4s ease-out 0.5s forwards; /* W3C */
 }
 
 @keyframes moveLogo {
