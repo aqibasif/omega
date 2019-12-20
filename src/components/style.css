@@ -33,7 +33,11 @@ h1 {
    background-color: lightgrey;
    width: 100%;
    text-align: center;
-   animation: movBox 4s infinite linear;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 200px;
+   /* animation: movBox 4s infinite linear; */
 }
 
 @keyframes movBox {
@@ -48,7 +52,28 @@ h1 {
    }
 }
 
+.lettery {
+   font-size: 130px;
+   animation: letter-spring 4s infinite ease-in-out normal;
+}
 
+@keyframes letter-spring {
+   0% {
+      letter-spacing: 40px;
+      color: lightgray;
+      font-size: 80px;
+   }
+   50% {
+      letter-spacing: 0px;
+      color: black;
+      font-size: 127px;
+   }
+   100% {
+      letter-spacing: 40px;
+      color: lightgray;
+      font-size: 80px;
+   }
+}
 
 .biglogo img {
    opacity: 0%;

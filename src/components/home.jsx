@@ -17,7 +17,7 @@ class Home extends Component {
             </div> */}
 
             <div className='boxy p-2'>
-               <h1>OMEGA</h1>
+               <h1 className="lettery">OMEGA</h1>
             </div>
          </div>
       );
