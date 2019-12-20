@@ -10,13 +10,15 @@ class Application extends Component {
    render() {
       return (
          <Router>
-            <div>
+            <React.Fragment>
                <Header />
-               <Switch>
-                  <Route exact path='/' component={Home} />
-                  <Route exact path='/cart' component={Cart} />
-               </Switch>
-            </div>
+               <div className='page'>
+                  <Switch>
+                     <Route exact path='/' component={Home} />
+                     <Route exact path='/cart' component={Cart} />
+                  </Switch>
+               </div>
+            </React.Fragment>
          </Router>
       );
    }

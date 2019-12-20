@@ -7,7 +7,7 @@ class Header extends Component {
       return (
          <nav className='navbar navbar-expand-md sticky-top navbar-light header'>
             <Link className='navbar-brand ml-3' to='/'>
-               <img src='/img/logo5.png' alt='Logo' width="100px"/>
+               <img src='/img/logo5.png' alt='Logo' width="100px" className="logo"/>
             </Link>
 
             <button

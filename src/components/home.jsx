@@ -12,10 +12,13 @@ class Home extends Component {
       return (
          <div className='home'>
             <img src='/img/img2.jpg' alt='OMEGA' width='100%' />
-            <div className='biglogo'>
+            {/* <div className='biglogo'>
                <img src='/img/logo5.png' alt='Logo' className='bigLogo' />
-            </div>
+            </div> */}
 
+            <div className='boxy p-2'>
+               <h1>OMEGA</h1>
+            </div>
          </div>
       );
    }

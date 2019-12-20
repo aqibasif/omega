@@ -2,24 +2,57 @@ body {
    background-color: #e0e2e1;
 }
 
+h1 {
+   font-family: 'Oswald', sans-serif;
+}
+
 .header {
    webkit-backdrop-filter: saturate(180%) blur(20px);
    backdrop-filter: saturate(180%) blur(20px);
-   background-color: rgba(255,255,255,0.4);
+   background-color: rgba(255, 255, 255, 0.4);
 }
 
-
-.home {
-   margin-top: -72px;
+.logo {
+   animation: logoDown 0.8s;
 }
 
-.cart {
+@keyframes logoDown {
+   0% {
+      transform: translateY(-100%);
+   }
+   100% {
+      transform: translateY(0%);
+   }
+}
+
+.page {
    margin-top: -72px;
 }
 
 .biglogo {
    text-align: center;
    margin-top: -35%;
+   margin-bottom: 21%;
+}
+
+.boxy {
+   background-color: lightgrey;
+   width: 100%;
+   text-align: center;
+   animation: movBox 4s infinite linear;
+}
+
+@keyframes movBox {
+   0% {
+      transform: translateY(100%);
+      transform: scale(0%);
+   }
+   50% {
+      transform: translateY(0%);
+   }
+   100% {
+      transform: translateY(100%);
+   }
 }
 
 .biglogo img {
@@ -30,6 +63,66 @@ body {
    -ms-animation: moveLogo 1.4s ease-out 0.5s forwards; /* Internet Explorer */
    -o-animation: moveLogo 1.4s ease-out 0.5s forwards; /* Opera */
    animation: moveLogo 1.4s ease-out 0.5s forwards; /* W3C */
+}
+
+@-ms-keyframes moveLogo {
+   0% {
+      opacity: 0%;
+      transform: translateY(-150%);
+   }
+   50% {
+      opacity: 100%;
+      transform: translateY(10%);
+   }
+   100% {
+      opacity: 100%;
+      transform: translateY(0%);
+   }
+}
+
+@-o-keyframes moveLogo {
+   0% {
+      opacity: 0%;
+      transform: translateY(-150%);
+   }
+   50% {
+      opacity: 100%;
+      transform: translateY(10%);
+   }
+   100% {
+      opacity: 100%;
+      transform: translateY(0%);
+   }
+}
+
+@-moz-keyframes moveLogo {
+   0% {
+      opacity: 0%;
+      transform: translateY(-150%);
+   }
+   50% {
+      opacity: 100%;
+      transform: translateY(10%);
+   }
+   100% {
+      opacity: 100%;
+      transform: translateY(0%);
+   }
+}
+
+@-webkit-keyframes moveLogo {
+   0% {
+      opacity: 0%;
+      transform: translateY(-150%);
+   }
+   50% {
+      opacity: 100%;
+      transform: translateY(10%);
+   }
+   100% {
+      opacity: 100%;
+      transform: translateY(0%);
+   }
 }
 
 @keyframes moveLogo {
@@ -77,7 +170,6 @@ body {
    margin-bottom: 40px;
 }
 
-
 .one {
    background-color: bisque;
    width: 100%;
@@ -92,7 +184,6 @@ body {
    height: 500px;
    z-index: 2;
 }
-
 
 .box {
    background-color: whitesmoke;
