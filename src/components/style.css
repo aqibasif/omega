@@ -29,12 +29,6 @@ h1 {
    margin-top: -72px;
 }
 
-.biglogo {
-   text-align: center;
-   margin-top: -35%;
-   margin-bottom: 21%;
-}
-
 .boxy {
    background-color: lightgrey;
    width: 100%;
@@ -45,7 +39,6 @@ h1 {
 @keyframes movBox {
    0% {
       transform: translateY(100%);
-      transform: scale(0%);
    }
    50% {
       transform: translateY(0%);
@@ -54,6 +47,8 @@ h1 {
       transform: translateY(100%);
    }
 }
+
+
 
 .biglogo img {
    opacity: 0%;
