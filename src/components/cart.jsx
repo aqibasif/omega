@@ -11,7 +11,7 @@ class Cart extends Component {
       return (
          <div className='cart'>
             <img src='/img/omega114.jpg' alt='cocomo' width="100%"/>
-            <p className="m-5">
+            <p className="m-5 carttext">
                The key point to take away here is the variant prop on our motion
                element. Variants let us define multiple states for our
                animations. Variants are pre-defined visual states that a

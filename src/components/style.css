@@ -160,6 +160,22 @@ h1 {
    }
 }
 
+.carttext {
+   animation: textup 1s ease-out;
+}
+
+@keyframes textup {
+   0% {
+      transform: translateY(10%);
+      opacity: 0%;
+   }
+   100% {
+      transform: translateY(0%);
+      opacity: 100%;
+   }
+}
+
+
 .heroback {
    background-color: #f2f2f2;
    margin-top: 0px;
@@ -226,4 +242,42 @@ h1 {
    box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.6),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
    margin-bottom: 40px;
+}
+
+.backarea {
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.boxed {
+   background-color: rgb(8, 133, 133);
+   height: 100px;
+   width: 100px;
+ }
+ 
+ .transform {
+   -webkit-transition: all 2s ease;  
+   -moz-transition: all 2s ease;  
+   -o-transition: all 2s ease;  
+   -ms-transition: all 2s ease;  
+   transition: all 2s ease;
+ }
+ 
+ .transform-active {
+   width: 200px;
+   animation: nk 2s ease-in-out forwards;
+ }
+   
+ @keyframes nk {
+   0% {
+      transform: translateY(0%);
+   }
+   50% {
+      transform: translateY(100%);
+   }
+   100% {
+      transform: translateY(0%);
+   }
 }
