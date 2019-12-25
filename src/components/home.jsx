@@ -36,7 +36,12 @@ class Home extends Component {
             ></div> */}
 
             <div className='backarea'>
-               <img src="/img/logo.png" className="transform" alt="Htm" width="20%"/>
+               <img
+                  src='/img/logo.png'
+                  className='transform'
+                  alt='Htm'
+                  width='20%'
+               />
                <div className='boxed transform'></div>
             </div>
             <input
@@ -45,6 +50,17 @@ class Home extends Component {
                value='Click Me'
                className='btn btn-warning m-2'
             ></input>
+
+            <div className='imagez'>
+               <img src='/img/img2.jpg' alt='OMEGA' width='100%' />
+               <img src='/img/logo.png' alt='log' className='imgtwo' />
+            </div>
+
+            <div className="box1">
+               <div className="box2">
+                  <p>bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb jhbjhb </p>
+               </div>
+            </div>
          </div>
       );
    }
