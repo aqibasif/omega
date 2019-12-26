@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import $ from 'jquery';
+import Hero from './hero';
 
 class Home extends Component {
    state = {};
@@ -21,9 +22,11 @@ class Home extends Component {
       AOS.init();
       return (
          <div className='home'>
-            <img src='/img/img2.jpg' alt='OMEGA' width='100%' />
-
-            <div className='boxy p-2'>
+            <Hero />
+       
+            <img src='/img/hero-back.jpg' alt='OMEGA' width='100%' />
+            <a href='#footer'>Footer</a>
+            <div className='boxy p-4'>
                <h1 className='lettery'>OMEGA</h1>
             </div>
             {/* 
@@ -44,6 +47,7 @@ class Home extends Component {
                />
                <div className='boxed transform'></div>
             </div>
+
             <input
                type='button'
                id='button'
@@ -56,9 +60,40 @@ class Home extends Component {
                <img src='/img/logo.png' alt='log' className='imgtwo' />
             </div>
 
-            <div className="box1">
-               <div className="box2">
-                  <p>bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb jhbjhb </p>
+            <div className='box1' id='footer'>
+               <div className='box2'>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
+                  <p>
+                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
+                     jhbjhb{' '}
+                  </p>
                </div>
             </div>
          </div>
