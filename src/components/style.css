@@ -121,7 +121,6 @@ body {
    transition: all 0.3s ease-out;
 }
 
-
 .article:hover {
    box-shadow: 0 20px 15px 0 rgba(189, 189, 189, 0.6);
    /* margin-top: 40px;
@@ -164,8 +163,36 @@ body {
 
 .article:hover img {
    width: 108%;
-  -webkit-filter: blur(2px) grayscale(50%);
+   -webkit-filter: blur(2px) grayscale(50%);
 }
+
+.about {
+   background-color: #252525;
+}
+
+.about img {
+   margin-top: 60px;
+   margin-bottom: -70px;
+   animation: textup 1s ease-out;
+}
+
+.abouttext {
+   color: grey;
+   animation: textup 1.3s ease-out;
+}
+
+@keyframes textup {
+   0% {
+      transform: translateY(10%);
+      opacity: 0%;
+   }
+   100% {
+      transform: translateY(0%);
+      opacity: 100%;
+   }
+}
+
+/* ==========================  */
 
 .boxy {
    background-color: lightgrey;
@@ -295,21 +322,6 @@ body {
    100% {
       opacity: 100%;
       transform: translateY(0%);
-   }
-}
-
-.carttext {
-   animation: textup 1s ease-out;
-}
-
-@keyframes textup {
-   0% {
-      transform: translateY(10%);
-      opacity: 0%;
-   }
-   100% {
-      transform: translateY(0%);
-      opacity: 100%;
    }
 }
 
