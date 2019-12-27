@@ -7,7 +7,9 @@ import Articles from './articles';
 import Office from './office';
 
 class Home extends Component {
-   state = {};
+   state = {
+      
+   };
 
    componentDidMount() {
       window.scrollTo(0, 0);

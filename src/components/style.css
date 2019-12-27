@@ -245,6 +245,23 @@ h6 {
    margin-right: 10px;
 }
 
+/* =================\  Home  \=====================*/
+
+.home {
+animation: page-animate 1s ease-out forwards;
+}
+
+@keyframes page-animate {
+   0% {
+      transform: translateY(72px);
+      opacity: 90%;
+   }
+   100% {
+      transform: translateY(0);
+      opacity: 100%;
+   }
+}
+
 /* =================\  Office  \==================== */
 
 .office {
