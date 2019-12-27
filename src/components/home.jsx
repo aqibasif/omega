@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import $ from 'jquery';
 import Hero from './hero';
+import Articles from './articles';
 
 class Home extends Component {
    state = {};
@@ -23,20 +24,14 @@ class Home extends Component {
       return (
          <div className='home'>
             <Hero />
-       
-            <img src='/img/hero-back.jpg' alt='OMEGA' width='100%' />
+            <Articles />
+            
+            {/* <img src='/img/hero-back.jpg' alt='OMEGA' width='100%' /> */}
             <a href='#footer'>Footer</a>
+
             <div className='boxy p-4'>
                <h1 className='lettery'>OMEGA</h1>
             </div>
-            {/* 
-            <div
-               data-aos='fade-right'
-               data-aos-anchor='#example-anchor'
-               data-aos-offset='500'
-               data-aos-duration='500'
-               className='boxed'
-            ></div> */}
 
             <div className='backarea'>
                <img

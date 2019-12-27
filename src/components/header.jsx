@@ -24,19 +24,10 @@ class Header extends Component {
 
             <div className='collapse navbar-collapse' id='navbarNav'>
                <ul className='navbar-nav ml-auto '>
+
                   <li className='nav-item mr-4'>
                      <Link className='nav-link' to='/'>
                         Home
-                     </Link>
-                  </li>
-                  <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/watches'>
-                        Watches
-                     </Link>
-                  </li>
-                  <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/straps'>
-                        Straps
                      </Link>
                   </li>
                   <li className='nav-item mr-4'>
