@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Article = ({ title }) => {
+const Article = ({ title, imgUrl }) => {
    return (
       <div className='article'>
          <div className='img-box'>
-            <img src='/img/hero-back.jpg' alt='...' />
+            <img src={imgUrl} alt='...' />
          </div>
          <div className='card-body article-box'>
             <div className='line'></div>

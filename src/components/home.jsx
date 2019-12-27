@@ -9,15 +9,17 @@ class Home extends Component {
    state = {};
 
    componentDidMount() {
+      window.scrollTo(0, 0);
+      document.title = 'OMEGA';
+   
+     
       $('#button').click(function() {
          $('.transform').toggleClass('transform-active');
       });
    }
 
    componentWillMount() {
-      window.scrollTo(0, 0);
-      document.title = 'OMEGA';
-   }
+     }
 
    render() {
       AOS.init();
