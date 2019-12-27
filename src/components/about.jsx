@@ -10,7 +10,7 @@ class About extends Component {
    render() {
       return (
          <div className='about row'>
-            <div className='col-3'></div>
+            <div className='col-sm-3'></div>
             <div className='col-sm-6'>
 
                <img src='/img/img4.jpg' alt='cocomo' width='100%' />
@@ -63,7 +63,7 @@ class About extends Component {
                   out this
                </p>
             </div>
-            <div className='col-3'></div>
+            <div className='col-sm-3'></div>
          </div>
       );
    }
