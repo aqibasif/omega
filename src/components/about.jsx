@@ -13,7 +13,7 @@ class About extends Component {
             <div className='col-3'></div>
             <div className='col-sm-6'>
 
-               <img src='/img/omega114.jpg' alt='cocomo' width='100%' />
+               <img src='/img/img4.jpg' alt='cocomo' width='100%' />
 
                <p className='m-5 abouttext'>
                   The key point to take away here is the variant prop on our
