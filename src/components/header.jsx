@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
    state = {};
@@ -7,7 +7,12 @@ class Header extends Component {
       return (
          <nav className='navbar navbar-expand-md sticky-top navbar-light header'>
             <Link className='navbar-brand ml-3' to='/'>
-               <img src='/img/logo5.png' alt='Logo' width="100px" className="logo"/>
+               <img
+                  src='/img/logo5.png'
+                  alt='Logo'
+                  width='100px'
+                  className='logo'
+               />
             </Link>
 
             <button
@@ -24,17 +29,12 @@ class Header extends Component {
 
             <div className='collapse navbar-collapse' id='navbarNav'>
                <ul className='navbar-nav ml-auto '>
-
                   <li className='nav-item mr-4'>
                      <Link className='nav-link' to='/'>
                         Home
                      </Link>
                   </li>
-                  <li className='nav-item mr-4'>
-                     <Link className='nav-link' to='/editableproducts'>
-                        Editable Products
-                     </Link>
-                  </li>
+
                   <li className='nav-item mr-4'>
                      <Link className='nav-link' to='/about'>
                         About Us

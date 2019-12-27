@@ -9,7 +9,7 @@ const Hero = () => {
             German made.
          </h1>
          <p className='lead'>
-            Minimalist watches for those who wear things with care.
+            Minimalist furnitures for those who use things with care.
          </p>
       </div>
    );

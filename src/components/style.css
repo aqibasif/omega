@@ -9,6 +9,15 @@ body {
    -webkit-overflow-scrolling: touch;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Poppins', sans-serif;
+}
+
 ::-webkit-scrollbar {
    width: 18px;
 }
@@ -32,10 +41,22 @@ body {
    background-color: #29292959;
 }
 
+/*  =============\  Header  \================ */
+
 .header {
    webkit-backdrop-filter: saturate(180%) blur(20px);
    backdrop-filter: saturate(180%) blur(20px);
    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.header2 {
+   display: flex;
+   flex-direction: column;
+}
+
+.menu {
+   display: flex;
+   flex-direction: row;
 }
 
 .logo {
@@ -54,6 +75,8 @@ body {
 .page {
    margin-top: -72px;
 }
+
+/*  =============\  Hero  \================ */
 
 .hero {
    background-image: url('/img/img2.jpg');
@@ -107,6 +130,8 @@ body {
    }
 }
 
+/*  =============\  Article  \================ */
+
 .articles {
    background-color: #f4f4f4;
    padding: 80px 0px;
@@ -131,7 +156,7 @@ body {
 .article-box {
    padding: 50px 30px;
    background-color: white;
-   height: 200px;
+   height: 260px;
 }
 
 .line {
@@ -166,6 +191,8 @@ body {
    -webkit-filter: blur(2px) grayscale(50%);
 }
 
+/*  =============\  About  \================ */
+
 .about {
    background-color: #252525;
 }
@@ -190,6 +217,84 @@ body {
       transform: translateY(0%);
       opacity: 100%;
    }
+}
+
+/*  =============\  Home - Link  \================ */
+
+.linktezt {
+   display: flex;
+   align-items: center;
+   font-size: 38px;
+   padding: 20px;
+}
+
+.link {
+   color: black;
+   font-weight: 600;
+   transition: all 0.3s ease-in-out;
+   display: flex;
+   align-items: center;
+}
+
+.link div {
+   display: inline-block;
+   background-color: crimson;
+   width: 0px;
+   height: 3px;
+   transition: all 0.3s ease-out;
+}
+
+.link:hover {
+   text-decoration: none;
+   color: crimson;
+}
+
+.link:hover div {
+   width: 30px;
+   margin-right: 10px;
+}
+
+/* =================\  Footer  \==================== */
+
+.footer {
+   background-color: #303030;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.link-t {
+   font-family: 'Poppins', sans-serif;
+   color: lightgrey;
+   padding: 5px;
+   transition: all 0.3s ease-out;
+}
+
+.link-t div {
+   background-color: lightgrey;
+   height: 1px;
+   width: 0px;
+   margin-top: -17px;
+   transition: all 0.3s ease-out;
+}
+
+.link-t p {
+   margin-top: 10px;
+   transition: all 0.3s ease-out;
+}
+
+.link-t:hover {
+   cursor: pointer;
+}
+
+.link-t:hover p {
+   color: crimson;
+}
+
+.link-t:hover div {
+   width: 100%;
+   background-color: crimson;
 }
 
 /* ==========================  */

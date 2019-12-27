@@ -24,12 +24,14 @@ class Home extends Component {
       return (
          <div className='home'>
             <Hero />
-            <Articles />
-            
-            {/* <img src='/img/hero-back.jpg' alt='OMEGA' width='100%' /> */}
-            <a href='#footer'>Footer</a>
 
-            <div className='boxy p-4'>
+            <Articles />
+
+            {/* <div className='linktezt'>
+               <a href='#footer' className='link'><div></div> Footer</a>
+            </div> */}
+
+            {/* <div className='boxy p-4'>
                <h1 className='lettery'>OMEGA</h1>
             </div>
 
@@ -49,48 +51,12 @@ class Home extends Component {
                value='Click Me'
                className='btn btn-warning m-2'
             ></input>
-
-            <div className='imagez'>
+ */}
+            {/* <div className='imagez'>
                <img src='/img/img2.jpg' alt='OMEGA' width='100%' />
                <img src='/img/logo.png' alt='log' className='imgtwo' />
             </div>
-
-            <div className='box1' id='footer'>
-               <div className='box2'>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-                  <p>
-                     bhjbjhb hjbjhb jhbjhbjb jhbjhb jhhbjhb jhbjhb jhbjhb jhbjhb
-                     jhbjhb{' '}
-                  </p>
-               </div>
-            </div>
+ */}
          </div>
       );
    }
