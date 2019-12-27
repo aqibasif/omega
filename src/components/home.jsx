@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import $ from 'jquery';
 import Hero from './hero';
 import Articles from './articles';
+import Office from './office';
 
 class Home extends Component {
    state = {};
@@ -25,6 +26,8 @@ class Home extends Component {
             <Hero />
 
             <Articles />
+
+            <Office />
 
             {/* <div className='linktezt'>
                <a href='#footer' className='link'><div></div> Footer</a>
