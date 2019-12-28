@@ -15,8 +15,8 @@ class About extends Component {
                <h1>ABOUT US</h1>
             </div>
 
-            <div className='col-sm-3'></div>
-            <div className='col-sm-6'>
+            <div className='col-sm-2'></div>
+            <div className='col-sm-8'>
                <img src='/img/img4.jpg' alt='cocomo' width='100%' />
 
                <h1 className='about-head'>ABOUT US</h1>
@@ -40,7 +40,7 @@ class About extends Component {
                   out this
                </p>
             </div>
-            <div className='col-sm-3'></div>
+            <div className='col-sm-2'></div>
          </div>
       );
    }
