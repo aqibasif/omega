@@ -8,22 +8,21 @@ const Articles = () => {
 
          <div className='col-md p-4'>
             <Article
-               title='Omega | De Padova opens the doors to a new design space
-         in Madrid'
+               title='Omega | Kitchen Designs'
                imgUrl='/img/img3.jpg'
             />
          </div>
 
          <div className='col-md p-4'>
             <Article
-               title='Omega | De Padova advertising campaign'
+               title='Omega | Interior Designs'
                imgUrl='/img/img4.jpg'
             />
          </div>
 
          <div className='col-md p-4'>
             <Article
-               title='Omega | De Padova Studio Helsinki opening'
+               title='Omega | Furniture Designs'
                imgUrl='/img/img5.jpg'
             />
          </div>

@@ -121,6 +121,11 @@ h6 {
    }
 }
 
+.boxz {
+   height: 400px;
+   background-color: teal;
+}
+
 /*  =============\  Article  \================ */
 
 .articles {
@@ -206,10 +211,10 @@ h6 {
    align-items: center;
    justify-content: flex-end;
    padding: 10%;
-    animation: page-go 1.9s ease-out forwards 6.9s;  
+    animation: white-box-go 1.9s ease-out forwards 6.9s;  
 }
 
-@keyframes page-go {
+@keyframes white-box-go {
    0% {
       transform: translateX(0%);
    }
@@ -252,7 +257,7 @@ h6 {
    color: transparent;
    font-size: 50px;
    animation: letter-in 4s ease-in-out 2.4s;
- }
+}
 
 @keyframes letter-in {
    0% {
@@ -261,26 +266,58 @@ h6 {
    }
    40% {
       letter-spacing: 0px;
-      color: grey;
+      color: lightgrey;
    }
    60% {
       letter-spacing: 0px;
-      color: grey;   
+      color: lightgrey;
    }
    100% {
       letter-spacing: 10px;
-      color: transparent;   
+      color: transparent;
    }
-
 }
 
 .about img {
    /* animation: textup 1s ease-out; */
 }
 
+.about-head {
+   text-align: center;
+   font-weight: bold;
+   margin-top: 40px;
+}
+
+.maroon-box {
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+}
+
+.maroon-line {
+   background-color: brown;
+   height: 4px;
+   width: 16%;
+   animation: moving-line 2s ease-in-out infinite;
+}
+
+@keyframes moving-line {
+   0% {
+      width: 16%;
+   }
+   50% {
+      width: 19%;
+   }
+   100% {
+      width: 16%;
+   }
+}
+
 .abouttext {
    color: #666666;
    cursor: default;
+   margin: 5px;
+   margin-top: 30px;
    /* animation: textup 1.3s ease-out; */
 }
 

@@ -5,17 +5,27 @@ import $ from 'jquery';
 import Hero from './hero';
 import Articles from './articles';
 import Office from './office';
+// import sr from './ScrollReveal';
 
 class Home extends Component {
-   state = {
-      
-   };
+   state = {};
 
    componentDidMount() {
       window.scrollTo(0, 0);
       document.title = 'OMEGA';
-   
-     
+
+      // const config = {
+      //    origin: 'bottom',
+      //    duration: 1000,
+      //    delay: 150,
+      //    distance: '200px',
+      //    scale: 1,
+      //    easing: 'ease-out',
+      //    reset: true
+      // };
+
+      // sr.reveal(this.refs.box1, config);
+
       $('#button').click(function() {
          $('.transform').toggleClass('transform-active');
       });
@@ -27,7 +37,9 @@ class Home extends Component {
          <div className='home'>
             <Hero />
 
-            <Articles />
+            <Articles/>
+
+            {/* <div className='boxz' ref='box1'></div> */}
 
             <Office />
 

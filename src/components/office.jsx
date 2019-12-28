@@ -9,7 +9,7 @@ const Office = () => {
                <div className='o-line'></div>
 
                <h5>
-                  Italian craftsmanship, driven by the vision of iconic
+                  German craftsmanship, driven by the vision of iconic
                   designers.
                </h5>
 
