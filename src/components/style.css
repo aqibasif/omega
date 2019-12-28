@@ -137,6 +137,12 @@ h6 {
    transition: all 0.3s ease-out;
 }
 
+@media (max-width: 768px) {
+   .article {
+      margin: 10px 50px;
+   }
+}
+
 .article:hover {
    box-shadow: 0 20px 15px 0 rgba(189, 189, 189, 0.6);
    /* margin-top: 40px;
@@ -190,13 +196,91 @@ h6 {
    /* animation: page-animate 1s ease-out forwards; */
 }
 
+.white-box {
+   background-color: #e0e2e1;
+   height: 102vh;
+   width: 105vw;
+   position: absolute;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 10%;
+    animation: page-go 1.9s ease-out forwards 6.9s;  
+}
+
+@keyframes page-go {
+   0% {
+      transform: translateX(0%);
+   }
+   100% {
+      transform: translateX(100%);
+      display: none;
+   }
+}
+
+.inner-about {
+   background-color: #303030;
+   height: 102vh;
+   width: 105vw;
+   position: absolute;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 10%;
+   animation: about-in 8s ease-out forwards; 
+}
+
+@keyframes about-in {
+   0% {
+      transform: translateX(100%);
+   }
+   30% {
+      transform: translateX(0%);
+   }
+   80% {
+      transform: translateX(0%);
+   }
+   100% {
+      transform: translateX(100%);
+      display: none;
+   }
+}
+
+.inner-about h1 {
+   color: transparent;
+   font-size: 50px;
+   animation: letter-in 4s ease-in-out 2.4s;
+ }
+
+@keyframes letter-in {
+   0% {
+      letter-spacing: 10px;
+      color: transparent;
+   }
+   40% {
+      letter-spacing: 0px;
+      color: grey;
+   }
+   60% {
+      letter-spacing: 0px;
+      color: grey;   
+   }
+   100% {
+      letter-spacing: 10px;
+      color: transparent;   
+   }
+
+}
+
 .about img {
-   margin-top: 60px;
    /* animation: textup 1s ease-out; */
 }
 
 .abouttext {
    color: #666666;
+   cursor: default;
    /* animation: textup 1.3s ease-out; */
 }
 
@@ -249,7 +333,7 @@ h6 {
 /* =================\  Home  \=====================*/
 
 .home {
-/* animation: page-animate 1s ease-out forwards; */
+   /* animation: page-animate 1s ease-out forwards; */
 }
 
 @keyframes page-animate {
@@ -283,6 +367,13 @@ h6 {
    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.082);
    transition: all 0.3s ease-out;
    padding: 65px;
+}
+
+@media (max-width: 768px) {
+   .inner-office {
+      width: 80%;
+      padding: 45px;
+   }
 }
 
 .o-line {

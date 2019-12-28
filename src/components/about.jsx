@@ -10,9 +10,14 @@ class About extends Component {
    render() {
       return (
          <div className='about row'>
+
+            <div className="white-box"></div>
+            <div className='inner-about'>
+               <h1>ABOUT US</h1>
+            </div>
+
             <div className='col-sm-3'></div>
             <div className='col-sm-6'>
-
                <img src='/img/img4.jpg' alt='cocomo' width='100%' />
 
                <p className='m-5 abouttext'>
