@@ -410,6 +410,12 @@ h6 {
 }
 
 @media (max-width: 768px) {
+   .office {
+      background-attachment: scroll;
+      background-position: center;
+      background-size: cover;
+   }
+   
    .inner-office {
       width: 80%;
       padding: 45px;
