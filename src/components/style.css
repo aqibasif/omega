@@ -94,7 +94,18 @@ h6 {
 @media (max-width: 768px) {
    .hero {
       padding: 30px;
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -10;
+      background: url('/img/img2.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
    }
+
    .hero h1 {
       font-size: 35px;
       font-weight: 400;
@@ -211,7 +222,7 @@ h6 {
    align-items: center;
    justify-content: flex-end;
    padding: 10%;
-    animation: white-box-go 1.9s ease-out forwards 6.9s;  
+   animation: white-box-go 1.9s ease-out forwards 6.9s;
 }
 
 @keyframes white-box-go {
@@ -234,7 +245,7 @@ h6 {
    align-items: center;
    justify-content: flex-end;
    padding: 10%;
-   animation: about-in 8s ease-out forwards; 
+   animation: about-in 8s ease-out forwards;
 }
 
 @keyframes about-in {
