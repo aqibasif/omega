@@ -9,7 +9,7 @@ class About extends Component {
       window.scrollTo(0, 0);
       document.title = 'About - OMEGA';
 
-      setTimeout(() => this.setState({ loading: false }), 6000);
+      setTimeout(() => this.setState({ loading: false }), 4500);
    }
 
    render() {
