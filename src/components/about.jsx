@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
 
 class About extends Component {
-   state = {};
+   state = {
+      loading: true
+   };
+
    componentDidMount() {
       window.scrollTo(0, 0);
       document.title = 'About - OMEGA';
+
+      setTimeout(() => this.setState({ loading: false }), 6000);
    }
 
    render() {
+      if (this.state.loading)
+         return (
+            <div className='about row'>
+               <div className='white-box'></div>
+               <div className='inner-about'>
+                  <h1>ABOUT US</h1>
+               </div>
+            </div>
+         );
+
       return (
          <div className='about row'>
+            
             <div className='white-box'></div>
             <div className='inner-about'>
                <h1>ABOUT US</h1>
             </div>
-
+            
             <div className='col-sm-2'></div>
             <div className='col-sm-8'>
-               <img src='/img/img4.jpg' alt='cocomo' width='100%' />
+               <img src='/img/img42.jpg' alt='cocomo' width='100%' />
 
                <h1 className='about-head'>ABOUT US</h1>
 
