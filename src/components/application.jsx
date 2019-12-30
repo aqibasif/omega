@@ -13,6 +13,7 @@ class Application extends Component {
    };
 
    componentDidMount() {
+      
       setTimeout(() => this.setState({ loading: false }), 1500);
     }
 

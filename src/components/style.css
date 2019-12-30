@@ -43,6 +43,14 @@ h6 {
 
 /*  ==============\  Loading  \=============== */
 
+.load-img {
+   width: 100vw;
+   height: 100vh;
+   background-image: url('/img/Omega10.jpg');
+   background-position: center;
+   background-size: cover;
+}
+
 .load-page {
    height: 100vh;
    display: flex;
