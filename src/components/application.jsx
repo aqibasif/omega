@@ -4,11 +4,20 @@ import Header from './header';
 import Footer from './footer';
 import Home from './home';
 import About from './about';
+import Loading from './loading';
 import './style.css';
 
 class Application extends Component {
-   state = {};
+   state = {
+      loading: true
+   };
+
+   componentDidMount() {
+      setTimeout(() => this.setState({ loading: false }), 1500);
+    }
+
    render() {
+      if (this.state.loading) return <Loading />;
       return (
          <Router>
             <React.Fragment>

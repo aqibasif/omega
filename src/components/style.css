@@ -41,6 +41,59 @@ h6 {
    background-color: #29292959;
 }
 
+/*  ==============\  Loading  \=============== */
+
+.load-page {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient( 45deg, lightgray, white);
+}
+
+.loading {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 20%;
+   padding: 30px 0px;
+   border-radius: 5px;
+   backdrop-filter: saturate(180%) blur(20px);
+   background-color: rgba(255, 255, 255, 0.4);
+   z-index: 10;
+}
+
+.loading img {
+   width: 75%;
+   animation: load 1.5s ease-in-out infinite;
+}
+
+@keyframes load {
+   0% {
+      opacity: 60%;
+   }
+   50% {
+      opacity: 100%;
+   }
+   100% {
+      opacity: 60%;
+   }
+}
+
+@media (max-width: 768px) {
+   .loading {
+      width: 30%;
+      padding: 20px 0%;
+      text-align: center;
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(255, 255, 255, 0.4);
+   }
+
+   .loading img {
+      width: 80%;
+   }
+}
+
 /*  =============\  Header  \================ */
 
 .header {
@@ -80,6 +133,20 @@ h6 {
    flex-direction: column;
    background-attachment: fixed;
    padding: 130px;
+   /* animation: image-out 1.2s ease-out;  */
+}
+
+@keyframes image-out {
+   0% {
+      margin-top: 10vh;
+      margin-left: 10vw;
+      width: 80vw;
+      height: 80vh;
+   }
+   100% {
+      width: 100vw;
+      height: 100vh;
+   }
 }
 
 .hero h1 {
@@ -95,7 +162,6 @@ h6 {
    .hero {
       padding: 30px;
       background-attachment: scroll;
-   
    }
 
    .hero h1 {
@@ -415,7 +481,7 @@ h6 {
       background-position: center;
       background-size: cover;
    }
-   
+
    .inner-office {
       width: 80%;
       padding: 45px;
