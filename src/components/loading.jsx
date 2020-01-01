@@ -4,10 +4,14 @@ class Loading extends Component {
    state = {};
    render() {
       return (
-         <div className='load-img'>
-            <div className='loading-bar'>
-               <div className="bar"></div>
-            </div>
+         // <div className='load-img'>
+         //    <div className='loading-bar'>
+         //       <div className="bar"></div>
+         //    </div>
+         // </div>
+
+         <div className='loading2'>
+            <div className='loading-img'></div>
          </div>
          //  <div className='load-page'>
          //     <div className='loading'>
