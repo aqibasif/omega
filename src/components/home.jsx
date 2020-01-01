@@ -3,10 +3,10 @@ import $ from 'jquery';
 import Hero from './hero';
 import Articles from './articles';
 import Office from './office';
+import ContactUs from './contactus';
 
 class Home extends Component {
-   state = {
-   };
+   state = {};
 
    componentDidMount() {
       window.scrollTo(0, 0);
@@ -28,6 +28,8 @@ class Home extends Component {
             {/* <div className='boxz' ref='box1'></div> */}
 
             <Office />
+
+            <ContactUs />
 
             {/* <div className='linktezt'>
                <a href='#footer' className='link'><div></div> Footer</a>

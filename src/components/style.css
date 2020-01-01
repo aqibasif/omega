@@ -206,6 +206,7 @@ h6 {
 
 .page {
    margin-top: -72px;
+   overflow-x: hidden;
 }
 
 /*  =============\  Hero  \================ */
@@ -659,7 +660,7 @@ h6 {
 
 .footer {
    background-color: #303030;
-   padding: 20px;
+   padding: 12px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -696,6 +697,49 @@ h6 {
 .link-t:hover div {
    width: 100%;
    background-color: crimson;
+}
+
+
+.copyright {
+   background-color: #303030;
+   color: grey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 12px;
+}
+
+.copyright p {
+   font-size: 11px;
+}
+
+/* ===============\  Contact Us  \================= */
+
+.contact {
+   padding: 20px;
+}
+
+.contact h1 {
+   font-weight: bold;
+   font-size: 60px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.contact-btn {
+   border: 2px #303030 solid;
+   background-color: white;
+   padding: 7px 40px;
+   font-family: 'Poppins';
+   font-weight: bold;
+   text-transform: uppercase;
+   margin: 15px 0px;
+   transition: 0.2s all ease-in-out;
+}
+
+.contact-btn:hover{
+   box-shadow: 0 10px 10px 0 rgba(189, 189, 189, 0.6);
+   
 }
 
 /* ==========================  */
