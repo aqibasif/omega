@@ -65,6 +65,7 @@ h6 {
       padding-top: 90%;
    }
 }
+
 .loading-bar {
    height: 15px;
    border: 1px solid grey;
@@ -88,6 +89,25 @@ h6 {
    background-image: linear-gradient(to left,#ecc942, #b88c33);
    animation: bar-loading 2.5s ease-out forwards;
    z-index: 1;
+}
+
+@media (max-width: 500px) {
+   .loading2 {
+      animation: bar-loading-2 2.5s ease-out forwards;
+   }
+
+   @keyframes bar-loading-2 {
+      0% {
+         width: 18%;
+      }
+      10% {
+         width: 20%;
+      }
+      100% {
+         width: 78%;
+      }
+   }
+   
 }
 
 .loading-img {
@@ -235,12 +255,24 @@ h6 {
    .hero h1 {
       font-size: 35px;
       font-weight: 400;
+      animation: letter-come-2 1.5s ease-out forwards 0.5s;
    }
 }
 
 @keyframes letter-come {
    0% {
       letter-spacing: 10px;
+      color: transparent;
+   }
+   100% {
+      letter-spacing: 0px;
+      color: #303030;
+   }
+}
+
+@keyframes letter-come-2 {
+   0% {
+      letter-spacing: 1px;
       color: transparent;
    }
    100% {
