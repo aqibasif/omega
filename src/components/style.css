@@ -52,13 +52,11 @@ h6 {
    padding-top: 40%;
 }
 
-
 @media (max-width: 1000px) and (min-width: 680px) {
    .load-img {
       padding-top: 55%;
    }
 }
-
 
 @media (max-width: 680px) {
    .load-img {
@@ -86,7 +84,7 @@ h6 {
 .loading2 {
    width: 100%;
    height: 100vh;
-   background-image: linear-gradient(to left,#ecc942, #b88c33);
+   background-image: linear-gradient(to left, #ecc942, #b88c33);
    animation: bar-loading 2.5s ease-out forwards;
    z-index: 1;
 }
@@ -107,12 +105,12 @@ h6 {
          width: 78%;
       }
    }
-   
 }
 
 .loading-img {
    background-image: url('/img/loading.png');
-   height: 100vh;   width: 100vw;
+   height: 100vh;
+   width: 100vw;
    background-position: center;
    background-size: cover;
    z-index: 22;
@@ -129,7 +127,6 @@ h6 {
       width: 72%;
    }
 }
-
 
 .load-page {
    height: 100vh;
@@ -699,7 +696,6 @@ h6 {
    background-color: crimson;
 }
 
-
 .copyright {
    background-color: #303030;
    color: grey;
@@ -737,9 +733,22 @@ h6 {
    transition: 0.2s all ease-in-out;
 }
 
-.contact-btn:hover{
+@media (max-width: 500px) {
+   .contact {
+      padding: 0px;
+   }
+
+   .contact h1 {
+      font-size: 50px;
+   }
+
+   .contact-btn {
+      width: 100%;
+   }
+}
+
+.contact-btn:hover {
    box-shadow: 0 10px 10px 0 rgba(189, 189, 189, 0.6);
-   
 }
 
 /* ==========================  */
