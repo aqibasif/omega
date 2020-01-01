@@ -710,6 +710,10 @@ h6 {
 
 /* ===============\  Contact Us  \================= */
 
+.contact-row {
+   background-color: white;
+}
+
 .contact {
    padding: 20px;
 }

@@ -60,7 +60,7 @@ class ContactUs extends Component {
 
    render() {
       return (
-         <div className='row'>
+         <div className='row contact-row'>
             <div className='col-md-3'></div>
 
             <div className='m-5 contact col-md-6'>
