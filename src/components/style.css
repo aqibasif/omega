@@ -46,9 +46,52 @@ h6 {
 .load-img {
    width: 100vw;
    height: 100vh;
-   background-image: url('/img/Omega10.jpg');
+   background-image: url('/img/Omega14.jpg');
    background-position: center;
    background-size: cover;
+   padding-top: 40%;
+}
+
+
+@media (max-width: 1000px) and (min-width: 680px) {
+   .load-img {
+      padding-top: 55%;
+   }
+}
+
+
+@media (max-width: 680px) {
+   .load-img {
+      padding-top: 90%;
+   }
+}
+.loading-bar {
+   height: 15px;
+   border: 1px solid grey;
+   width: 30%;
+   margin: auto;
+   padding: 3px;
+   border-radius: 15px;
+}
+
+.bar {
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(#ecc942, #b88c33);
+   border-radius: 10px;
+   animation: bar-loading 2.5s ease-out forwards;
+}
+
+@keyframes bar-loading {
+   0% {
+      width: 1%;
+   }
+   10% {
+      width: 2%;
+   }
+   100% {
+      width: 100%;
+   }
 }
 
 .load-page {
@@ -56,7 +99,7 @@ h6 {
    display: flex;
    align-items: center;
    justify-content: center;
-   background-image: linear-gradient( 45deg, lightgray, white);
+   background-image: linear-gradient(45deg, lightgray, white);
 }
 
 .loading {
