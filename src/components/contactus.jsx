@@ -7,8 +7,13 @@ class ContactUs extends Component {
       email: '',
       subject: '',
       message: '',
-      result: ''
+      result: '',
+      respond: ''
    };
+
+   componentDidMount() {
+      this.setState({ respond: '' });
+   }
 
    handleSubmit = e => {
       e.preventDefault();
@@ -19,8 +24,12 @@ class ContactUs extends Component {
          from_name: name,
          to_name: 'AQIB',
          subject: 'Contact Message from Omega',
-         message_html: message
+         message_html:
+            message +
+            ` - Email: ${email}`
       };
+
+      this.setState({ respond: 'true' });
 
       emailjs
          .send(
@@ -31,14 +40,12 @@ class ContactUs extends Component {
          )
          .then(
             result => {
-               window.scrollTo(0, 0);
                this.setState({ result: 'Message sent successfully!' });
-               alert(this.state.result);
+               this.setState({ respond: 'sent' });
             },
             error => {
-               window.scrollTo(0, 0);
                this.setState({ result: 'Message sent failed!' });
-               alert(this.state.result);
+               this.setState({ respond: 'fail' });
             }
          );
       this.resetForm();
@@ -105,25 +112,29 @@ class ContactUs extends Component {
                      ></textarea>
                   </div>
 
-                  <button
-                     className='contact-btn'
-                     //  data-toggle='modal'
-                     //  data-target='.bd-example-modal-sm'
-                  >
-                     Submit
-                  </button>
+                  <button className='contact-btn'>Submit</button>
 
-                  {/* <div
-                     class='modal fade bd-example-modal-sm'
-                     tabindex='-1'
-                     role='dialog'
-                     aria-labelledby='mySmallModalLabel'
-                     aria-hidden='true'
-                  >
-                     <div class='modal-dialog modal-sm' role='document'>
-                        <div class='modal-content'>{this.state.result}</div>
+                  {this.state.respond === 'true' && (
+                     <div className='load-icon'>
+                        <i class='fa fa-undo loader'></i>
                      </div>
-                  </div> */}
+                  )}
+
+                  {this.state.respond === 'sent' && (
+                     <div className='respond-message msg-ok'>
+                        <h6>
+                           {this.state.result} <i class='fa fa-check'></i>
+                        </h6>
+                     </div>
+                  )}
+
+                  {this.state.respond === 'fail' && (
+                     <div className='respond-message msg-fail'>
+                        <h6>
+                           {this.state.result} <i class='fa fa-times'></i>
+                        </h6>
+                     </div>
+                  )}
                </form>
             </div>
 

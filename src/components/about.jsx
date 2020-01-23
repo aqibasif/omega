@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 class About extends Component {
    state = {
@@ -9,6 +10,12 @@ class About extends Component {
       window.scrollTo(0, 0);
       document.title = 'About - OMEGA';
 
+      $('#button2').click(function() {
+         $('.transform').toggleClass('transform-active');
+      });
+   }
+
+   componentWillMount() {
       setTimeout(() => this.setState({ loading: false }), 4500);
    }
 
@@ -24,13 +31,12 @@ class About extends Component {
          );
 
       return (
-         <div className='about row'>
-            
+         <div className='about transform row'>
             <div className='white-box'></div>
             <div className='inner-about'>
                <h1>ABOUT US</h1>
             </div>
-            
+
             <div className='col-sm-2'></div>
             <div className='col-sm-8'>
                <img src='/img/img42.jpg' alt='cocomo' width='100%' />
@@ -40,6 +46,18 @@ class About extends Component {
                <div className='maroon-box'>
                   <div className='maroon-line'></div>
                </div>
+
+               {/* <div className='backarea'>
+                  <div className='boxed transform'></div>
+               </div> */}
+
+               {/* <input
+                  type='button'
+                  id='button2'
+                  value='Dark Mode'
+                  className='btn btn-warning m-2'
+               ></input> */}
+
                <p className='abouttext'>
                   The key point to take away here is the variant prop on our
                   motion element. Variants let us define multiple states for our

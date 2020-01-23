@@ -9,7 +9,7 @@ import './style.css';
 
 class Application extends Component {
    state = {
-      loading: true
+      loading: false
    };
 
    componentDidMount() {

@@ -35,11 +35,11 @@ class Home extends Component {
                <a href='#footer' className='link'><div></div> Footer</a>
             </div> */}
 
-            {/* <div className='boxy p-4'>
+             {/* <div className='boxy p-4'>
                <h1 className='lettery'>OMEGA</h1>
-            </div>
+            </div> */}
 
-            <div className='backarea'>
+            {/* <div className='backarea'>
                <img
                   src='/img/logo.png'
                   className='transform'
@@ -54,13 +54,13 @@ class Home extends Component {
                id='button'
                value='Click Me'
                className='btn btn-warning m-2'
-            ></input>
- */}
+            ></input> */}
+ 
             {/* <div className='imagez'>
                <img src='/img/img2.jpg' alt='OMEGA' width='100%' />
                <img src='/img/logo.png' alt='log' className='imgtwo' />
             </div>
- */}
+  */}
          </div>
       );
    }

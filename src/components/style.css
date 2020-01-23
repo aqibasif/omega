@@ -1,11 +1,13 @@
 html {
    scroll-behavior: smooth;
-}
+ }
 
 body {
    background-color: #f4f4f4;
    overflow: overlay;
    overflow-x: hidden;
+   margin: 0px;
+   padding: 0px;
    -webkit-overflow-scrolling: touch;
 }
 
@@ -754,6 +756,40 @@ h6 {
    box-shadow: 0 10px 10px 0 rgba(189, 189, 189, 0.6);
 }
 
+.load-icon {
+   font-size: large;
+   display: flex;
+}
+
+.loader {
+   font-size: 30px;
+   animation: spinner 1.5s linear forwards infinite;
+}
+
+@keyframes spinner {
+   0% {
+      transform: rotate(360deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+.respond-message {
+   padding: 15px 15px;
+   padding-bottom: 7px;
+   border-radius: 5px;
+}
+
+.msg-ok {
+   background-color: rgb(189, 250, 189);
+   border: 2px rgb(159, 187, 159) solid;
+}
+.msg-fail {
+   background-color: rgb(250, 189, 189);
+   border: 2px rgb(187, 159, 159) solid;
+}
+
 /* ==========================  */
 
 .boxy {
@@ -951,12 +987,13 @@ h6 {
 }
 
 .boxed {
-   background-color: rgb(8, 133, 133);
    height: 100px;
    width: 100px;
 }
 
 .transform {
+   background-color: #e0e2e1;
+
    -webkit-transition: all 2s ease;
    -moz-transition: all 2s ease;
    -o-transition: all 2s ease;
@@ -965,8 +1002,9 @@ h6 {
 }
 
 .transform-active {
-   width: 200px;
-   animation: nk 2s ease-in-out forwards;
+   background-color: #303030;
+   color: #e0e2e1;
+   /* animation: nk 2s ease-in-out forwards; */
 }
 
 @keyframes nk {
