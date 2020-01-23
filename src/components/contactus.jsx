@@ -18,15 +18,13 @@ class ContactUs extends Component {
    handleSubmit = e => {
       e.preventDefault();
 
-      const { name, email, subject, message, result } = this.state;
+      const { name, email, message } = this.state;
 
       let templateParams = {
          from_name: name,
          to_name: 'AQIB',
          subject: 'Contact Message from Omega',
-         message_html:
-            message +
-            ` - Email: ${email}`
+         message_html: message + ` - Email: ${email}`
       };
 
       this.setState({ respond: 'true' });
@@ -40,12 +38,16 @@ class ContactUs extends Component {
          )
          .then(
             result => {
-               this.setState({ result: 'Message sent successfully!' });
-               this.setState({ respond: 'sent' });
+               this.setState({
+                  result: 'Message sent successfully!',
+                  respond: 'sent'
+               });
             },
             error => {
-               this.setState({ result: 'Message sent failed!' });
-               this.setState({ respond: 'fail' });
+               this.setState({
+                  result: 'Message sent failed!',
+                  respond: 'fail'
+               });
             }
          );
       this.resetForm();
