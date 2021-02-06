@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
          </div>
          <div className='copyright'>
-            <p>Copyright © 2020 Omega - Developed by Muhammad Aqib Asif</p>
+            <p>Copyright © 2020 Omega - Developed by <a href="https://aqibasif.vercel.app" target="_blank">Muhammad Aqib Asif</a></p>
          </div>
       </React.Fragment>
    );
