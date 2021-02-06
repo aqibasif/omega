@@ -10,7 +10,7 @@ class About extends Component {
     window.scrollTo(0, 0);
     document.title = 'About - OMEGA';
     
-    setTimeout(() => this.setState({ loading: false }), 3200);
+    setTimeout(() => this.setState({ loading: false }), 3000);
 
      $('#button2').click(function () {
       $('.transform').toggleClass('transform-active');
