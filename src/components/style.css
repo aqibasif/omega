@@ -242,12 +242,12 @@ h6 {
 .hero h1 {
   padding-top: 150px;
   color: #303030;
-  animation: letter-come 1.5s ease-out forwards 0.5s;
+  animation: letter-come 1.5s ease-out both 0.5s;
 }
 
 .lead {
   color: #303030;
-  animation: letter-up 2s ease-in-out;
+  animation: letter-up 2s ease-in-out both;
 }
 
 @media (max-width: 768px) {
