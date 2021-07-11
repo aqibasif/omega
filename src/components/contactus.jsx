@@ -72,7 +72,7 @@ class ContactUs extends Component {
          <div className='row contact-row'>
             <div className='col-md-3'></div>
 
-            <div className='m-5 contact col-md-6'>
+            <div className='m-4 contact col-md-6'>
                <h1>Contact Us</h1>
 
                <form onSubmit={this.handleSubmit}>
