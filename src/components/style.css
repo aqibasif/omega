@@ -728,6 +728,18 @@ h6 {
   font-size: 11px;
 }
 
+.copyright a {
+  color: rgb(202, 202, 202);
+  transition: all 0.3s ease-out;
+}
+
+.copyright a:hover {
+  color: crimson;
+text-decoration: none;
+}
+
+
+
 /* ===============\  Contact Us  \================= */
 
 .contact-row {
